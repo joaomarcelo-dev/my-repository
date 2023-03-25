@@ -1,3 +1,30 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header-container .logo-header {
     width: 60px;
+    padding: 8px 12px;
+}
+
+.title-header {
+    font-size: 1.3rem;
+}
+
+.icon-menu {
+    padding: 12px;
+}
+
+.icon-menu svg {
+    transform: scale(1.2);
+}
+
+.hover-efect-white {
+    transition: all .3s ease-in-out;
+}
+
+.hover-efect-white:hover {
+    background-color: rgb(235, 235, 235);
 }

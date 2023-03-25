@@ -1,0 +1,40 @@
+.link-card-projects {
+    text-decoration: none;
+    color: black;
+}
+
+.container-card-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 20px 10px;
+    background-color: rgb(212, 212, 212);
+    margin: 7px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container-card-projects:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transform: scale(1.1);
+}
+
+.img-project {
+    width: 90%;
+}
+
+.img-project img{
+    width: 100%;
+}
+
+.description-project h4 {
+    width: 90%;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+}
+
+.description-project p {
+    font-size: 0.6rem;
+}
