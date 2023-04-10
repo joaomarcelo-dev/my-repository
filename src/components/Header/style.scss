@@ -28,3 +28,28 @@
 .hover-efect-white:hover {
     background-color: rgb(235, 235, 235);
 }
+
+@media screen and (min-width:600px) {
+    .header-container .logo-header {
+        width: 90px;
+    }
+
+    .icon-menu img {
+        width: 30px;
+    }
+
+    .title-header {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .header-container .logo-header {
+        width: 110px;
+    }
+
+    .icon-menu img {
+        width: 35px;
+    }
+}
+

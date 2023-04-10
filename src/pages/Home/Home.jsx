@@ -13,6 +13,7 @@ import logoLinkedin from '../../assets/🦆 icon _linkedin outlined_.svg'
 
 // =================== Img dos projetos =============================== //
 import imgPortifolio from '../../assets/projects/portifólio/Captura de tela de 2023-03-25 15-15-05.png'
+import imgBotDiscord from '../../assets/projects/botDiscord/meta-image.png';
 // -------------------------------------------------------------------- //
 export default function Home() {
     return (
@@ -22,71 +23,63 @@ export default function Home() {
             </header>
 
             <main>
-                <section className='top-main'>
-                    <div className='aplic-animated'>
-                        <div className="text-main-top">
-                            <p>Bem vindo ao meu portifólio</p>
-                            <h3>OLÁ! EU SOU UM DESENVOLVEDOR WEB FULL-STACK</h3>
-                            <a href="#session-contact">
-                                <button className='text-main-button'>CONTACTE-ME</button>
-                            </a>
-                        </div>
-                        <div className="img-main-top">
-                            <img src={imgInitMain} alt="" />
-                        </div>
-                    </div>
-                </section>
+                <div className='aplic-animated'>
 
-                <section className='about-me'>
-                    <div className='aplic-animated'>
-                        <div className='div-init-about-me'>
-                            <img src={rectangle} alt="" />
-                            <h3>Sobre mim</h3>
-                        </div>
+                    <section className='top-main'>
+                            <div className="text-main-top">
+                                <p>Bem vindo ao meu portifólio</p>
+                                <h3>OLÁ! EU SOU UM DESENVOLVEDOR WEB FULL-STACK</h3>
+                                <a href="#session-contact">
+                                    <button className='text-main-button'>CONTACTE-ME</button>
+                                </a>
+                            </div>
+                            <div className="img-main-top">
+                                <img src={imgInitMain} alt="" />
+                            </div>
+                    </section>
 
-                        <aside className='my-info'>
-                            <div className='my-info-img'>
-                                <img src={imgProfile} alt="Foto do dono do perfil" />
+                    <section className='about-me'>
+                            <div className='div-init-about-me'>
+                                <img src={rectangle} alt="" />
+                                <h3>Sobre mim</h3>
                             </div>
 
-                            <div className="my-info-text">
-                                <p>Olá!! Meu nome é João Marcelo Lima Oliveira, tenho 18 anos e 
-                                    atuamente estou cursando desenvolvimento web Full-Stack na TRYBE.
-                                </p>
-                            </div>
-                        </aside>
+                            <aside className='my-info'>
+                                <div className='my-info-img'>
+                                    <img src={imgProfile} alt="Foto do dono do perfil" />
+                                </div>
 
-                        <aside className='stacks'>
-                            <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joaomarcelo-dev&layout=compact&langs_count=10&theme=dark"/>
-                        </aside>
-                    </div>
-                </section>
+                                <div className="my-info-text">
+                                    <p>Olá!! Meu nome é João Marcelo Lima Oliveira, tenho 18 anos e 
+                                        atuamente estou cursando desenvolvimento web Full-Stack na TRYBE.
+                                    </p>
+                                </div>
+                            </aside>
 
-                <section className='section-my-projects'>
-                    <h3>Meus projetos</h3>
-                    <div className='projcts'>
-                        <CardProjects
-                            img={imgPortifolio}
-                            title="Portifólio antigo"
-                            description="Meu primeiro portifólio"
-                        />
-                    </div>
-                </section>
+                            <aside className='stacks'>
+                                <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joaomarcelo-dev&layout=compact&langs_count=10&theme=dark"/>
+                            </aside>
+                    </section>
 
-                <section id='session-contact' className='section-contact'>
-                    <h3>Contacte-me</h3>
-                    <div className='contact-container'>
-                        <div className='img-contact'>
-                            <img src={imgContact} alt="" />
+                    <section className='section-my-projects'>
+                        <h3>Meus projetos</h3>
+                        <div className='projcts'>
+                            <CardProjects
+                                link='https://github.com/joaomarcelo-dev/joaomarcelo-dev'
+                                img={imgPortifolio}
+                                title="Portifólio antigo"
+                                description="Meu primeiro portifólio"
+                            />
+
+                            <CardProjects
+                                link='https://github.com/joaomarcelo-dev/discorBot'
+                                img={imgBotDiscord}
+                                title="Bot Discord"
+                                description="Meu primeiro bot de discord utilizando a lib do Discord.js"
+                            />
                         </div>
-                        <form className='form-send-mensage' action="" method='get'>
-                            <input className='border-conf input-name input' type="text" placeholder='Nome'/>
-                            <input className='border-conf input-email input' type="text" placeholder='E-mail'/>
-                            <textarea className='border-conf text-area input' placeholder='Mensagem' name="" id="textarea-msg" cols="30" rows="10"></textarea>
-                            <input className='button-submit border-conf input' type="submit" id='submit' value="Enviar" />
-                        </form>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </main>
             <footer>
                 <div className='box-color box-color-left'></div>
