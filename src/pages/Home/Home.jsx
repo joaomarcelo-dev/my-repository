@@ -29,7 +29,7 @@ export default function Home() {
                             <div className="text-main-top">
                                 <p>Bem vindo ao meu portifólio</p>
                                 <h3>OLÁ! EU SOU UM DESENVOLVEDOR WEB FULL-STACK</h3>
-                                <a href="#session-contact">
+                                <a href="#footer">
                                     <button className='text-main-button'>CONTACTE-ME</button>
                                 </a>
                             </div>
@@ -49,7 +49,7 @@ export default function Home() {
                                     <img src={imgProfile} alt="Foto do dono do perfil" />
                                 </div>
 
-                                <div className="my-info-text">
+                                <div id='my-info' className="my-info-text">
                                     <p>Olá!! Meu nome é João Marcelo Lima Oliveira, tenho 18 anos e 
                                         atuamente estou cursando desenvolvimento web Full-Stack na TRYBE.
                                     </p>
@@ -68,8 +68,10 @@ export default function Home() {
                                 link='https://github.com/joaomarcelo-dev/joaomarcelo-dev'
                                 img={imgPortifolio}
                                 title="Portifólio antigo"
-                                description="Meu primeiro portifólio"
+                                description="Meu primeiro portifólio, inteiramente feito em Vanilla JS"
                             />
+
+                            {/* <CardProjects /> */}
 
                             <CardProjects
                                 link='https://github.com/joaomarcelo-dev/discorBot'
@@ -81,7 +83,7 @@ export default function Home() {
                     </section>
                 </div>
             </main>
-            <footer>
+            <footer id='footer'>
                 <div className='box-color box-color-left'></div>
 
                 <div className='networking'>
@@ -89,7 +91,7 @@ export default function Home() {
                         <img src={logoTwitter} alt="logo do twitter" />
                     </a>
 
-                    <a href="https://www.instagram.com/joao_marcelo_r35/" target="_blank">
+                    <a href="https://www.instagram.com/joao_marcelo_gtr35/" target="_blank">
                         <img src={logoIntagram} alt="logo do instagram" />
                     </a>
 
